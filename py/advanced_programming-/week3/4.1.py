@@ -1,0 +1,15 @@
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+A = float(input())
+B = float(input())
+C = float(input())
+D = float(input())
+
+n = A * D
+d = B * C
+
+g = gcd(n, d)
+print("Result:", n // g, "/", d // g)
